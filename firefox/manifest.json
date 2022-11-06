@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Smartschool Message",
-  "version": "1.0.3",
-  "description": "Troll your friends by showing a message badge without having any messages",
+  "name": "Christmas Skribble.io",
+  "version": "0.0.1-beta",
+  "description": "Christmasify your skribble.io",
   "icons": {
     "48": "logo/logo_48x48.png",
     "512": "logo/logo.png"
@@ -10,16 +10,16 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.smartschool.be/*"
+        "*://*.skribble.io/*"
       ],
       "js": [
-        "run.js"
+        "scripts/run.js"
       ]
     }
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "ss@matsevh"
+      "id": "Christmas-Skribble.io@matsevh"
     }
   }
 }
