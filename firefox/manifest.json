@@ -10,12 +10,15 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.skribble.io/*"
+        "*://skribble.io/*"
       ],
       "js": [
-        "scripts/run.js"
+        "run.js"
       ]
     }
+  ],
+  "permissions": [
+    "activeTab"
   ],
   "browser_specific_settings": {
     "gecko": {
